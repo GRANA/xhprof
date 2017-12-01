@@ -1,3 +1,5 @@
+**.DS_Store
+
 extension/*
 !extension/config.m4
 !extension/Makefile.local
