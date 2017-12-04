@@ -3,13 +3,32 @@ XHProf is a function-level hierarchical profiler for PHP and has a simple HTML b
 
 This version supports PHP7
 
+
 # Installation
+This is meant to be a submodule of [grana-docker](https://github.com/GRANA/grana-docker)
+but could also be installed alone
+
+##install with grana-docker
 ```
-git clone https://github.com/longxinH/xhprof.git ./xhprof
-cd xhprof/extension/
+cd <grana-docker-root>/xhprof-php7
+git init
+git remote add origin https://github.com/GRANA/xhprof
+git fetch
+git checkout origin/master
+cd <grana-docker-root>
+sh setup </path/to/grana.com/>
+```
+view run reports at http://local.xhprof.dev:8080/xhprof_html/index.php
+
+##standalone setup
+```
+git init
+git clone origin https://github.com/GRANA/xhprof
+cd ./extension/
 /path/to/php7/bin/phpize
 ./configure --with-php-config=/path/to/php7/bin/php-config
-make && sudo make install
+make
+make install
 ```
 
 #### configuration add to your php.ini
