@@ -18,7 +18,8 @@ git checkout origin/master
 cd <grana-docker-root>
 sh setup </path/to/grana.com/>
 ```
-view run reports at http://local.xhprof.dev:8080/xhprof_html/index.php
+- xhprof directory is installed under <gra-php container>/var/www/xhprof-php7
+- view run reports at http://local.xhprof.dev:8080/xhprof_html/index.php
 
 ##standalone setup
 ```
